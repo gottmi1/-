@@ -12,6 +12,8 @@
 
 <body>
 
+
+
   <header class="right-5">
     <div id="logo"><a href="#"><img src="img/jklogo.jpg" alt=""></a></div>
 
@@ -24,62 +26,62 @@
     </ul>
   </header>
 
+  <section id="fadein">
+    
+    <div id="silk">
+      <img src="/img/silkmood.jpg" alt="">
+    </div>
+
+    <div class="line1"></div>
+
+  </section>
+
   <section id="top">
 
     <div id="center-img">
-      <img src="/img/satin.png" alt="">
+      <img src="./img/satin.png" alt="">
     </div>
 
     <div id="full-logo" class="opa-0">
-      <img src="/image/logo.png" alt="">
+      <img src="./img/logo.png" alt="">
+    </div>
+
+    <div class="line1"></div>
+
+  </section>
+
+
+  <section id="middle">
+    <div class="kjline"></div>
+  <div class="line2"></div>
+
+  <img src="/img/아셀코포.png" alt="" id="celestia">
+  <div id="bluebox"></div>
+
+  </section>
+
+
+  <section id="base">
+    <div class="kjline"></div>
+    <div id="redbox"></div>
+    <img src="/img/alarose.jpg" alt="" id="alarose">
+
+  </section>
+
+
+  <section id="last" style="height: 150vh;">
+    <div class="kjline"></div>
+    <img src="/img/젠플.jpg" alt="" id="genfl">
+    <img src="/img/goldline.png" alt="" id="goldline">
+
+    <img src="/img/kjset.jpg" alt="" id="setumei">
+
+    <div id="genderbox">
+      
     </div>
 
   </section>
 
-  <section id="mid">
-    <div>
-      <p>& Floral</p>
-      <div id="aselfo">
-        <img src="/img/아셀코포.png" alt="">
-      </div>
-
-    </div>
-
-    <div>
-      <p>Citrus</p>
-      <div id="rose">
-        <img src="/image/alarose.jpg" alt="">
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="bot">
-
-    <div id="genfl">
-      <img src="/image/젠플.jpg" alt="">
-    </div>
-
-    <div id="line"></div>
-
-  </section>
-
-  <section id="last">
-
-    <div id="satin">
-      <img src="/image/satin.jpg" alt="">
-    </div>
-
-    <div id="silk">
-      <img src="/image/silk1.jpg" alt="">
-    </div>
-
-    <div id="bakara">
-      <img src="/image/바카라1.jpg" alt="">
-    </div>
-
-  </section>
 
   <script>
     window.addEventListener('load', () => {
@@ -89,6 +91,7 @@
       $fullLogo.classList.replace('opa-0', 'opa-1')
       window.addEventListener('scroll' , () => {
 
+        console.log()
         console.log(scrollY);
 
         if (scrollY >= 100) {
