@@ -55,29 +55,33 @@
     <div class="kjline"></div>
   <div class="line2"></div>
 
-  <img src="/img/아셀코포.png" alt="" id="celestia">
-  <div id="bluebox"></div>
+  <img src="/img/아셀코포.png" alt="" id="celestia" class="opa-0">
+  <div id="bluebox" class="wid0"></div>
 
   </section>
 
 
   <section id="base">
     <div class="kjline"></div>
-    <div id="redbox"></div>
-    <img src="/img/alarose.jpg" alt="" id="alarose">
+    <div id="redbox" class="hei0"></div>
+    <img src="/img/alarose.jpg" alt="" id="alarose" class="opa-0">
 
   </section>
 
 
-  <section id="last" style="height: 150vh;">
+  <section id="last" style="height: 170vh;">
     <div class="kjline"></div>
-    <img src="/img/젠플.jpg" alt="" id="genfl">
-    <img src="/img/goldline.png" alt="" id="goldline">
+    <img src="/img/젠플.jpg" alt="" id="genfl" class="opa-0">
+    <img src="/img/goldline.png" alt="" id="goldline" class="wid0">
 
-    <img src="/img/kjset.jpg" alt="" id="setumei">
+    <img src="/img/kjset.jpg" alt="" id="setumei" class="opa-0">
 
     <div id="genderbox">
-      
+      <div id="img">
+        <img src="/img/womens.jpg" alt="">
+        <img src="/img/mens.jpg" alt="">
+        <img src="/img/unisex.jpg" alt="">
+      </div>
     </div>
 
   </section>
@@ -86,12 +90,22 @@
   <script>
     window.addEventListener('load', () => {
       const $sec = document.querySelectorAll('section');
+
       const $fullLogo = document.querySelector('#full-logo');
+      const $blue = document.querySelector('#bluebox');
+      const $celes = document.querySelector('#celestia');
+      const $red = document.querySelector('#redbox');
+      const $alarose = document.querySelector('#alarose');
+      const $gold = document.querySelector('#goldline');
+      const $genfl = document.querySelector('#genfl');
+      const $setumei = document.querySelector('#setumei');
+
+
 
       $fullLogo.classList.replace('opa-0', 'opa-1')
       window.addEventListener('scroll' , () => {
 
-        console.log()
+        // console.log($sec[3].getBoundingClientRect());
         console.log(scrollY);
 
         if (scrollY >= 100) {
@@ -100,6 +114,35 @@
         $fullLogo.classList.replace('opa-0', 'opa-1')
       }
 
+      if (scrollY >= 400) {
+        $blue.classList.replace('wid0','wid47');
+        setInterval(() => {
+          $celes.classList.replace('opa-0','opa-1');
+          $celes.style.transform = "scale(1.1)";
+        }, 1000);
+      }
+
+      if (scrollY >= 1100) {
+        $red.classList.replace('hei0','hei80');
+        setInterval(() => {
+          $alarose.classList.replace('opa-0','opa-1');
+          $alarose.style.transform = "scale(1.1)";
+        }, 1000);
+      }
+
+      if (scrollY >= 2200) {
+        $gold.classList.replace('wid0','wid100');
+        setInterval(() => {
+          $genfl.classList.replace('opa-0','opa-1');
+          $genfl.classList.add('bo-rad35');
+        }, 1000);
+      }
+
+      if (scrollY >= 2700) {
+        $setumei.classList.replace('opa-0','opa-1');
+        $setumei.style.top = "50vh";
+
+      }
 
       })
 
