@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/popol.css">
+</head>
+
+<body>
+
+  <header class="right-5">
+    <div id="logo"><a href="#"><img src="img/jklogo.jpg" alt=""></a></div>
+
+    <ul id="gnb">
+      <li><a href="#">112121</a></li>
+      <li><a href="#">212121</a></li>
+      <li><a href="#">312121</a></li>
+      <li><a href="#">412121</a></li>
+      <li><a href="#">512121</a></li>
+    </ul>
+  </header>
+
+  <section id="top">
+
+    <div id="center-img">
+      <img src="/img/satin.png" alt="">
+    </div>
+
+    <div id="full-logo" class="opa-0">
+      <img src="/image/logo.png" alt="">
+    </div>
+
+  </section>
+
+  <section id="mid">
+    <div>
+      <p>& Floral</p>
+      <div id="aselfo">
+        <img src="/img/아셀코포.png" alt="">
+      </div>
+
+    </div>
+
+    <div>
+      <p>Citrus</p>
+      <div id="rose">
+        <img src="/image/alarose.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="bot">
+
+    <div id="genfl">
+      <img src="/image/젠플.jpg" alt="">
+    </div>
+
+    <div id="line"></div>
+
+  </section>
+
+  <section id="last">
+
+    <div id="satin">
+      <img src="/image/satin.jpg" alt="">
+    </div>
+
+    <div id="silk">
+      <img src="/image/silk1.jpg" alt="">
+    </div>
+
+    <div id="bakara">
+      <img src="/image/바카라1.jpg" alt="">
+    </div>
+
+  </section>
+
+  <script>
+    window.addEventListener('load', () => {
+      const $sec = document.querySelectorAll('section');
+      const $fullLogo = document.querySelector('#full-logo');
+
+      $fullLogo.classList.replace('opa-0', 'opa-1')
+      window.addEventListener('scroll' , () => {
+
+        console.log(scrollY);
+
+        if (scrollY >= 100) {
+        $fullLogo.classList.replace('opa-1', 'opa-0')
+      } else {
+        $fullLogo.classList.replace('opa-0', 'opa-1')
+      }
+
+
+      })
+
+
+    })
+  </script>
+</body>
+
+
+</html>

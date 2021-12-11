@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+p{
+  font-family: 'DM Serif Text', serif;
+  position: relative;
+  font-size: 2rem;
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  width: 5vw;
+  height: 100%;
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 5vh;
+  z-index: 5;
+}
+
+.right-0{
+  right: 0;
+}
+.right-5{
+  right: -5vw;
+}
+
+header #logo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#gnb {
+  margin: 0 auto;
+  width: 60%;
+  height: 70%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#gnb>li {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#top {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+#center-img {
+  width: 21vw;
+  height: 28vw;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+}
+
+#full-logo {
+  position: absolute;
+  height: 20vh;
+  bottom: 5vh;
+  left: 2vw;
+  transition: 1000ms;
+}
+
+.opa-0{opacity: 0;}
+.opa-1{opacity: 1;}
+
+
+#mid>div:nth-child(1) {width: 40%; height: 100%; background-color: #0D76B2; position: absolute; right: 3vw; z-index: 3;}
+
+#mid>div:nth-child(1)>p{
+  top: 80vh;
+  left: -1vw;
+}
+
+#aselfo{
+  width: 350px; height: 500px;
+  margin-top: 80px;
+  margin-left: 70px;
+}
+
+#mid>div:nth-child(2) {width: 80%; height: 70%; 
+  background-color: #9DD7FF; position: absolute;
+bottom: 0;}
+
+#rose{
+  width: 350px; height: 480px;
+  margin-left: 17vw;
+  margin-top: 14vh;
+}
+
+#genfl{
+  height: 50%;
+  width: 27%;
+  position: absolute;
+  top: 25vh;
+  right: 12vw;
+  z-index: 2;
+}
+#genfl>img{
+  border-radius: 40%;
+}
+#line{
+  width: 100%;
+  height: 4vh;
+  background-color: #FDFFB9;
+  position: inherit;
+  top: 48%;
+}
+
+.wid-0{width: 0;}
+.hei-0{height: 0;}
+.wid-0{width: 35vw;}
+.hei-0{width: 70vh;}
+
+#satin{
+  width: 682px;
+  height: 682px;
+  background-color: blue;
+  position: absolute;
+  top: 10vh;
+  left: 35vw;
+}
+
+#silk{
+  width: 720px;
+  height: 720px;
+  position: absolute;
+  left: 2vw;
+  top: 17vh;
+}
+
+#bakara{
+  width: 26vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 5vh;
+  right: 8vw;
+}
