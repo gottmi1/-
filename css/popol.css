@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
 .po-re{
   position: relative;
 }
@@ -17,14 +24,14 @@ h2{
   color: #464b5b;
 }
 p{
-  font-family: 'BCcardL';
-  color: #464b5b;
-  transition: 500ms;
-  line-height: 1.3rem;
+  font-family: 'Pretendard-Thin';
+  color: rgb(78, 76, 69);
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 span{
-  font-family: 'BCcardL';
-  color: #464b5b;
+  font-family: 'Pretendard-Thin';
+  color: rgb(78, 76, 69);
   font-size: 1.8rem;
   transition: 500ms;
 }
@@ -167,8 +174,9 @@ section{
   position: absolute;
   top: 30vh;
   left: 44vw;
-  transition: 400ms;
+  transition: 500ms;
   opacity: 0;
+  transform: scale(1.03);
 }
 #middle p{
   position: absolute;
@@ -177,6 +185,8 @@ section{
   width: 21vw;
   height: auto;
   opacity: 0;
+  transform: scale(1.03);
+  transition: 500ms;
 }
 
 #celestia{
@@ -195,7 +205,7 @@ section{
   position: absolute;
   right: 30vw;
   top: 35vh;
-  transition: 400ms;
+  transition: 1000ms;
 }
 .wid0{width: 0;}
 .wid47{width: 47vw;}
@@ -228,6 +238,7 @@ section{
   left: 26vw;
   opacity: 0;
   transition: 500ms;
+  transform: scale(1.03);
 }
 #base p{
   position: absolute;
@@ -235,6 +246,7 @@ section{
   left: 40vw;
   width: 24.5vw;
   opacity: 0;
+  transform: scale(1.03);
   transition: 500ms;
 }
 
@@ -259,7 +271,8 @@ section{
   width: 33vw;
   left: 29vw;
   top: 5vh;
-  transition: 500ms;
+  transition: 1000ms;
+  transform: scale(1.03);
 }
 #gent-box{
   top: 20vh;
@@ -271,12 +284,17 @@ section{
 }
 #gent-box>div{
   width: 40%;
+  transform: scale(1.03);
+}
+
+#genfl-g{
+  margin-top: 7.5vh;
 }
 
 #setumei{
   height: 40vh;
   position: absolute;
-  top: 70vh;
+  top: 90vh;
   transition: 1500ms;
   width: 80vw;
   left: 10vw;
@@ -291,7 +309,7 @@ section{
   justify-content: space-between;
   position: absolute;
   left: 10vw;
-  top: 145vh;
+  top: 120vh;
   transition: 500ms;
 }
 #img>div{
@@ -307,10 +325,10 @@ section{
   justify-content: space-between;
   position: absolute;
   left: 10vw;
-  top: 130vh;
+  top: 150vh;
 }
-#txt>p{
+#txt>div{
   width: 31%;
-  border: 1px solid black;
-  background-color: white;
+  transition: 500ms;
+  padding: 30px;
 }
